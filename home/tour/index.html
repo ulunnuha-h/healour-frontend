@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="../../style/utility.css">
+    <link rel="stylesheet" href="../../style/styles.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Healour</title>
+</head>
+<body>
+    <nav class="flex-row justify-center align-center">
+        <img src="../../assets/logo.png" alt="logo">
+        <section class="flex-row">
+            <input type="text" >
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </section>
+        <ul class="flex-row">
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+        <a href="../login.html">
+            <button class="btn-primary">Login</button>
+        </a>
+    </nav>
+    <!-- Main Begin-->
+    <div id="tour-list">
+        <main class="container flex-row">
+            <div class="col-3">
+                <section class="flex-row justify-center align-end">
+                    <img src="../../assets/filter-icon.svg" alt="filter" height="48">
+                    <h3>Filter</h3>
+                </section>
+                <section class="card-secondary flex-column">
+                    <span>Harga</span>
+                    <section class="text-field flex-row align-center justify-center">
+                        <label for="max">Rp</label>
+                        <input type="number" id="max" placeholder="Harga Minimum">
+                    </section>
+                    <section class="text-field flex-row align-center justify-center">
+                        <label for="max">Rp</label>
+                        <input type="number" id="max" placeholder="Harga Maximum">
+                    </section>
+                    <hr>
+                    <span>Kategori</span>
+                    <section class="option">
+                        <label for="semua">Semua</label>
+                        <input type="checkbox" id="semua">
+                    </section>
+                    <section class="option">
+                        <label for="wisataalam">Wisata Alam</label>
+                        <input type="checkbox" id="wisataalam">
+                    </section>
+                    <section class="option">
+                        <label for="seni">Seni & Budaya</label>
+                        <input type="checkbox" id="seni">
+                    </section>
+                    <section class="option">
+                        <label for="air">Tour Air</label>
+                        <input type="checkbox" id="air">
+                    </section>
+                    <hr>
+                    <span>Filter Lainnya</span>
+                    <section class="option">
+                        <label for="sekarang">Buka sekarang</label>
+                        <input type="checkbox" id="sekarang">
+                    </section>
+                    <section class="option">
+                        <label for="special">Spesial Promo</label>
+                        <input type="checkbox" id="special">
+                    </section>
+                    <section class="option">
+                        <label for="easy">Easy Access</label>
+                        <input type="checkbox" id="easy">
+                    </section>
+                </section>
+            </div>
+            <div class="col-9">
+                <section class="flex-row" style="position: relative;margin-bottom: 20px ;">
+                    <span style="margin-top: 8px; color: var(--color-2);">Urutkan dari : </span>
+                    <div class="dropdown-tour">
+                        <label for="dropdown" class="flex-row justify-between align-center">
+                            <span>Terpopuler</span><i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <input type="checkbox" id="dropdown">
+                        <ul>
+                            <li>Rating Tertinggi</li>
+                            <hr style="margin: 0px 12px;">
+                            <li>Harga</li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="card-list flex-row">
+                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
+                    <section class="col-7 flex-column justify-center">
+                        <section class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lowokwaru, Malang</span>
+                        </section>
+                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
+                        <a href="#">By Sobatperjalanan</a>
+                        <section class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5 | (200 Review)</span>
+                        </section>
+                        <h4 class="price">Rp 400.000</h4>
+                    </section>
+                </div>
+                <div class="card-list flex-row">
+                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
+                    <section class="col-7 flex-column justify-center">
+                        <section class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lowokwaru, Malang</span>
+                        </section>
+                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
+                        <a href="#">By Sobatperjalanan</a>
+                        <section class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5 | (200 Review)</span>
+                        </section>
+                        <h4 class="price">Rp 400.000</h4>
+                    </section>
+                </div><div class="card-list flex-row">
+                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
+                    <section class="col-7 flex-column justify-center">
+                        <section class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lowokwaru, Malang</span>
+                        </section>
+                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
+                        <a href="#">By Sobatperjalanan</a>
+                        <section class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5 | (200 Review)</span>
+                        </section>
+                        <h4 class="price">Rp 400.000</h4>
+                    </section>
+                </div>
+                <ul class="paginate">
+                    <li class="arrow"> < </li>
+                    <li class="item active"> 1 </li>
+                    <li class="item"> 2 </li>
+                    <li class="item"> .. </li>
+                    <li class="item"> 4 </li>
+                    <li class="arrow active"> > </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <!-- Main End -->
+    <footer>
+        <div class="flex-row justify-center">
+            <div class="col-3">
+                <img src="../../assets/logow.png" alt="white logo" style="width: 55%;">
+            </div>
+            <div class="col-3">
+                <h3>Halaman</h3>
+                <ul>
+                    <li>About</li>
+                    <li>News</li>
+                    <li>Register</li>
+                    <li>Login</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagarm</li>
+                    <li>Youtube</li>
+                    <li>Toktok</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h5>Tetap Up to Date dengan Healour</h5>
+                <input type="text" name="email" placeholder="Masukkan Alamat Email">
+                <button class="btn-primary">
+                    Langganan
+                </button>
+            </div>
+        </div>
+        
+        <section id="trademark">Copyright © 2022 Healour</section>
+    </footer>
+</body>
+</html>

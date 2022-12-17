@@ -1,0 +1,214 @@
+/* Primary Button */
+
+.btn-primary{
+    background-color: var(--color-1);
+    border: solid var(--color-1) 2px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: var(--color-white);
+    cursor: pointer;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.btn-primary:hover{
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+}
+
+.btn-primary:active{
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+/* Secondary Button */
+
+.btn-secondary{
+    box-sizing: border-box;
+    background-color: none;
+    border: solid var(--color-1) 2px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: var(--color-1);
+    cursor: pointer;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover{
+    background-color: var(--color-1);
+    color: var(--color-white);
+}
+
+.btn-secondary:active{
+    background-color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+/* Secondary Card */
+
+.card-secondary{
+    box-sizing: border-box;
+    background-color: var(--color-2);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+/* Primary Card */
+
+.card-primary{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--color-white);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+/* Tertiary Card */
+
+.card-tertiary{
+    background-color: var(--color-bg);
+    padding: 16px;
+    border-radius: 6px;
+    border: solid var(--color-2) 1px;
+    border-style: dashed;
+}
+
+/* Paginate */
+
+.paginate{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.paginate .item{
+    margin: 0px 8px;
+    color: #C8B88A;
+    cursor: pointer;
+}
+
+.paginate .item.active{
+    color: var(--color-2);
+    text-decoration: underline;
+    font-weight: bolder;
+    cursor: default;
+}
+
+.paginate .arrow{
+    color: var(--color-2);
+    opacity: 60%;
+    cursor: default;
+}
+
+.paginate .arrow.active{
+    color: var(--color-2);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* Breadcrumb */
+
+.breadcrumb{
+    color: var(--color-2);
+}
+
+.breadcrumb a{
+    color: var(--color-1);
+}
+
+/* Travel Name */
+
+.travel-name{
+    display: flex;
+    align-items: center;
+}
+
+.travel-name span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.travel-name img{
+    height: 32px;
+}
+
+/* Card List */
+
+.card-list{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.card-list:hover{
+    transform: scale(1.02);
+}
+
+.card-list img{
+    border-radius: 12px 0px 0px 12px;
+    object-fit: cover;
+}
+
+.card-list > section{
+    padding: 20px;
+    color: var(--color-2);
+}
+
+.card-list .location{
+    color: var(--color-2);
+    opacity: 0.75;
+    margin-bottom: 16px;
+}
+
+.card-list a{
+    margin: 16px 0px;
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+.card-list .rating i{
+    color: #CDDD11;
+}
+
+.card-list .price{
+    align-self: flex-end;
+}
+
+/* Card Tag */
+
+.card-tag{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 4px 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: solid var(--color-2) 1px;
+}
+
+.price-card .card-tertiary{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 16px;
+    list-style: none;
+    color: var(--color-2);
+}
+
+.price-card .card-tertiary li{
+    display: flex;
+    font-weight: 600;
+}
+
+.price-card .card-tertiary i{
+    margin-right: 16px;
+}
+
+.price-card .card-tertiary li:nth-child(2){
+    margin: 16px 0px;
+}

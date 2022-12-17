@@ -1,0 +1,90 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center{ justify-content: center; }
+.justify-end{ justify-content: flex-end; }
+.justify-between{ justify-content: space-between; }
+
+.align-center{ align-items: center;}
+.align-end{align-items: flex-end;}
+.align-start{align-items: flex-start;}
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px){
+    .container{
+        width: 1320px;
+    }
+}
+
+/* Column System */
+
+.col-1{ width: calc(1/12 * 100%); }
+.col-2{ width: calc(1/6 * 100%); }
+.col-3{ width: calc(1/4 * 100%);}
+.col-4{ width: calc(1/3 * 100%); }
+.col-5{ width: calc(5/12 * 100%); }
+.col-6{ width: calc(1/2 * 100%); }
+.col-7{ width: calc(7/12 * 100%); }
+.col-8{ width: calc(2/3 * 100%); }
+.col-9{ width: calc(3/4 * 100%); }
+.col-10{ width: calc(5/6 * 100%); }
+.col-11{ width: calc(11/12 * 100%); }
+.col-12{ width: calc(1 * 100%); }
+
+/* Heading */
+
+h1{
+    font-size: 48px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 42px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
+h3{
+    font-size: 36px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 30px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 24px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
+.w-100{ width: 100%; }
+.h-100{ height: 100%; }

@@ -1,0 +1,110 @@
+#profile-banner{
+    background-size: cover;
+    height: calc(40vh);
+    width: 100%;
+    margin: 0px;
+    background-image: url('../../assets/profile-banner.jpg');
+}
+
+/* User Profile */
+
+#user-profile{
+    position: relative;
+    bottom: 150px;
+}
+
+#user-profile img{
+    background-color: red;
+    border-radius: 50%;
+    border: solid var(--color-white) 4px;
+}
+
+#user-profile .align-end h3{
+    color: var(--color-2);
+    margin: 0 30px;
+    margin-bottom: 5%;
+}
+
+#user-profile .card-primary{
+    margin-left: 30px;
+    margin-top: 16px;
+    color: var(--color-2);
+}
+
+#user-profile .card-primary .paginate{
+    align-self: flex-end;
+    margin-top: 12px;
+}
+
+#user-profile .card-secondary{
+    color: var(--color-white);
+    margin-top: 16px;
+}
+
+#user-profile .card-secondary section{ 
+    margin-bottom: 16px;
+}
+
+#user-profile .card-tertiary{
+    margin: 12px 0px;
+    padding: 8px 12px;
+}
+
+#user-profile .card-tertiary .lunas{
+    padding: 8px 16px;
+}
+
+
+/* Profile Menu */
+
+#profile-menu{
+    margin-top: 12px;
+    margin-bottom: 0px !important;
+}
+
+#profile-menu a{
+    margin: 12px 0px;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+#profile menu a span,i{
+    font-size: 28px;
+    margin-right: 6px;
+}
+
+/* Edit Input */
+
+.edit-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.edit-input label{
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+.edit-input input{
+    margin-top: 12px;
+    border: 0px;
+    outline: none;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 6px;
+    color: var(--color-2);
+    background-color: #d9d9d9;
+    border: solid #d9d9d9 2px;
+}
+
+.edit-input input:focus{
+    border: solid var(--color-2) 2px;
+}
+
+.edit-input ~ a{
+    margin-top: 16px;
+    align-self: flex-end;
+}

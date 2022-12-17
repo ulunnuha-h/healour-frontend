@@ -1,0 +1,89 @@
+.tour-desc h3,h5{
+    color: var(--color-2);
+    margin-bottom: 12px;
+}
+/* Product Detail */
+
+.product-detail{
+    margin-bottom: 24px;
+}
+
+.product-detail hr{
+    margin: 20px 0px;
+    border-style: dashed;
+    border-color: var(--color-2);
+    border-width: 1px;
+}
+
+.product-detail ul,p{
+    color: var(--color-1);
+    text-align: justify;
+}
+
+.product-detail ul li{
+    padding: 0.4em auto;
+    margin-bottom: 12px;
+}
+
+.product-detail .tour-schedule{
+    list-style: none;
+    padding: 0px;
+}
+
+.product-detail .tour-schedule li{
+    background-image: url("../../assets/logo-list.png");
+    background-position: 0%;
+    background-repeat: no-repeat;
+    padding: 0.4em 0px;
+    padding-left: 32px;
+}
+
+.product-detail .facility .card-tag{
+    color: var(--color-2);
+    margin-right: 12px;
+}
+
+/* Tour Location */
+
+.tour-location{
+    color: var(--color-2);
+}
+
+.tour-location i{
+    margin-right: 8px;
+}
+
+.tour-location span, span i{
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 12px;
+}
+
+.tour-location img{
+    margin: 12px 0px;
+    border-radius: 12px;
+    border: solid var(--color-2) 1px;
+    background-color: red;
+}
+
+.tour-location a{
+    align-self: flex-start;
+    margin-bottom: 8px;
+}
+
+.tour-location > h5{
+    margin: 16px 0px;
+}
+
+.tour-location ul{
+    padding: 0px;
+    list-style: none;
+}
+
+.tour-location ul li{
+    margin-bottom: 12px;
+}
+
+.price-card > .card-primary{
+    margin-bottom: 30px;
+}

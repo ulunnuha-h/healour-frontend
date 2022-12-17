@@ -1,0 +1,64 @@
+#payment .flex-row{
+    width: 100%;
+}
+
+#payment .flex-row .col-8{
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+#payment .container{
+    margin: 32px auto;
+}
+
+.card-primary{
+    color: var(--color-2);
+}
+
+.card-primary hr{
+    margin: 20px 0px;
+}
+
+.invoice-number{
+    font-size: 20px;
+    text-align: end;
+}
+
+.invoice-number span{
+    font-size: 14px;
+}
+
+.invoice-address .col-6:nth-child(2){
+    text-align: end;
+}
+
+.invoice-detail{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.invoice-detail .col-9{
+    text-align: start;
+}
+
+.invoice-detail .col-3, tr{
+    text-align: end;
+}
+
+.invoice-detail td{
+    padding: 18px 0px;
+    border-bottom: solid rgba(71, 105, 48, 0.5) 2px;
+}
+
+.invoice-info .card-primary:nth-child(2){
+    margin-top: 30px;
+}
+
+.invoice-info .card-primary:nth-child(2) h5{
+    margin-bottom: 16px;
+}
+
+.breadcrumb{
+    align-self: flex-start;
+    margin-bottom: 12px;
+}

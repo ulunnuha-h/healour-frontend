@@ -1,0 +1,115 @@
+#login{
+    position: relative;
+}
+
+#login > div{
+    background: url("../assets/login-bg.jpg");
+    filter: brightness(0.7) contrast(0.8);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+#login .container{
+    min-height: calc(100vh - 64px);   
+    padding: 32px 0px;
+}
+
+.card-primary{
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-primary h3{
+    text-align: center;
+    color: var(--color-2);
+    margin-bottom: 42px;
+}
+
+.card-primary > a{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.text-field{
+    position: relative;
+    height: 24px;
+    margin-bottom: 38px;
+}
+
+.text-field label{
+    padding: 8px;
+    font-size: 15px;
+    background-color: var(--color-2);
+    color: var(--color-white);
+    border-radius: 6px 0px 0px 6px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-field input{
+    height: 100%;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    border: 0px;
+    background-color: #d9d9d9;
+    color: var(--color-2);
+    width: 16vw;
+}
+
+/* Remember Me */
+
+.remember-me{
+    margin-top: -16px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.remember-me label{
+    margin-left: 4px;
+    font-size: 12px;
+    color: #A59898;
+}
+
+.remember-me input{
+    accent-color: var(--color-2);
+}
+
+.remember-me a{
+    font-size: 12px;
+    color: #A59898;
+}
+
+/* Footnote */
+
+.footnote{
+    font-size: 12px;
+    color: #A59898;
+    align-self: center;
+    margin-top: 18px;
+}
+
+.footnote a{
+    font-size: 12px;
+    color: #A59898;
+}
+
+/* Password Hide */
+
+#hide,#hide2{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    color: var(--color-2);
+    cursor: pointer;
+}

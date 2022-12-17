@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+*{
+    margin: 0px;
+    font-size: 16px;
+    --color-bg :#FFFAE5 ;
+    --color-white : #f5f5f5;
+    --color-1:#86B049;
+    --color-hover:#9EC06D;
+    --color-2:#476930;
+    transition-duration: 300ms;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+
+nav{
+    height: 64px;
+    background-color: var(--color-bg);
+    padding: 12px 24px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav section{
+    width: 100%;
+    height: 100%;
+    margin: 0px 24px;
+}
+
+nav section input{
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    border-radius: 6px 0px 0px 6px;
+    width: 100%;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
+    padding: 6px;
+    color: var(--color-2);
+}
+
+nav section input:focus{
+    outline: none;
+    border: 1px solid var(--color-1);
+}
+
+nav section div{
+    background-color: var(--color-1);
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+}
+
+nav section div:hover{
+    background-color: var(--color-hover);
+}
+
+nav section div:active{
+    background-color: var(--color-2);
+}
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+nav ul li{
+    margin-right: 24px;
+}
+
+nav ul li a{    
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+nav .search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+}
+
+/* Footer */
+
+footer > div{
+    background-color: var(--color-2);
+    padding: 40px 32px;
+    color: var(--color-white);
+}
+
+footer h5{
+    color: var(--color-white) !important;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li{
+    font-family: 'Roboto', sans-serif; 
+    margin: 8px 0px;
+    cursor: pointer;
+    display: inline;
+    align-self: flex-start;
+}
+
+footer input{
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: solid #d9d9d9 2px;
+    width: 90%;
+    color: var(--color-white);
+}
+
+footer input::placeholder{
+    color: #d9d9d9;
+}
+
+footer input:focus{
+    outline: none;
+    border-bottom: solid var(--color-white) 3px;
+}
+
+footer #trademark{
+    border-top: solid white 1px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: var(--color-2);
+    color: var(--color-white);
+    font-size: 14px;
+}

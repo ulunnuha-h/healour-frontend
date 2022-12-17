@@ -1,0 +1,218 @@
+#profile-banner{
+    background-size: cover;
+    height: calc(40vh);
+    width: 100%;
+    margin: 0px;
+    background-position: center;
+    background-image: url('../../assets/travel-banner.jpg');
+}
+
+.container{
+    margin: 32px auto;
+}
+
+.container .breadcrumb{
+    margin-bottom: 16px;
+}
+
+.travel-profile{
+    position: relative;
+    bottom: 180px;
+}
+
+.travel-title img{
+    height: 100px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border: solid var(--color-2) 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Travel Description */
+
+.travel-description{    
+    padding: 24px;
+    border-radius: 12px;
+    margin-right: 30px;
+    color: var(--color-2);
+}
+
+.travel-description hr{
+    margin: 24px 0px;
+    border-color: var(--color-2);
+}
+
+.travel-description p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Travel Info */
+
+.travel-info{
+    color: var(--color-2);
+}
+
+.travel-info .col-6 section:nth-child(2){
+    margin: 16px 0px;
+}
+
+.travel-info i{
+    margin-right: 8px;
+}
+
+.travel-info hr{
+    margin: 0px 16px;
+    border-color: var(--color-2);
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.price{
+    margin-top: 56px;
+}
+
+/* Tour Detail */
+
+.tour-detail .col-8{
+    margin-right: 30px;
+}
+
+/* Tour gallery */
+
+.tour-gallery{
+    height: 60vh;
+}
+
+.tour-gallery .col-6 img{
+    object-fit: cover;
+    background-color: rebeccapurple;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.tour-gallery .col-3 img{
+    height: 47%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tour-gallery .col-3:first-child{
+    background-color: red;
+}
+
+.tour-gallery .col-3:nth-child(2){
+    margin: 0px 24px;
+}
+
+.tour-gallery .more-photos{
+    background-image: url(../../assets/bromo\ 4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    box-sizing: border-box;
+    background-color: red;
+    height: 47%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 12px;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.tour-gallery .more-photos > button{
+    background-color: var(--color-bg);
+    border: 0px;
+    padding: 8px;
+    color: var(--color-1);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.tour-gallery .more-photos:hover{
+    background-size: 140%;
+    filter: brightness(0.8);
+}
+
+.tour-title{
+    color: var(--color-2);
+    margin-top: 12px;
+}
+
+.tour-title i{
+    margin-right: 8px;
+}
+
+.tour-title .flex-row section:first-child{    
+    opacity: 0.75;
+}
+
+/* Tour review */
+
+.tour-review{
+    color: var(--color-2);
+    margin-bottom: 30px;
+}
+
+.tour-review .col-8 > span:last-child{
+    color: var(--color-1);
+    margin-top: 12px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.tour-review .col-8 > span:last-child:hover i{
+    margin-left: 8px;
+}
+
+.tour-review .rating {
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.tour-review .rating i{
+    font-size: 24px;
+    color: #CDDD11;
+}
+
+.tour-review .rating .card-tag{
+    margin: 0px 12px;
+}
+
+.tour-review .rating span:nth-child(3){
+    opacity: 0.75;
+}
+
+.tour-review .review-card{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.tour-review .review-card > span:nth-child(2){
+    margin-top: 6px;
+    opacity: 0.75;
+}
+
+.tour-review .review-card hr{
+    margin: 12px 0px;
+    border-color: var(--color-2);
+    opacity: 0.5;
+}
+
+.tour-review .col-4 span{
+    font-size: 36px;
+    opacity: 0.75;
+}
+
+.tour-review .col-4 h2{
+    margin-top: 12px;
+    margin-bottom: 48px;
+}
+
+.tour-review .col-4 a{
+    width: 75%;
+    text-align: center;
+}
