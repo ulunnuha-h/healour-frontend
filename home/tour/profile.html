@@ -12,18 +12,22 @@
     <title>Healour</title>
 </head>
 <body>
-    <nav class="flex-row justify-center align-center">
-        <img src="../../assets/logo.png" alt="logo">
+    <nav class="flex-row justify-between align-center">
+        <a href="../../index.html">
+            <img src="../../assets/logo.png" alt="logo">
+        </a>
         <section class="flex-row">
-            <input type="text" >
+            <input type="text" placeholder="Search a tour">
             <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../tour/index.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </section>
         <ul class="flex-row">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../home/news/index.html">News</a></li>
+            <li><a href="../register.html">Register</a></li>
         </ul>
         <a href="../login.html">
             <button class="btn-primary">Login</button>
@@ -74,7 +78,7 @@
                 <h4 class="price" style="align-self:flex-start;">Rp 400.000</h4>
             </section>
         </div>
-        <div class="card-list flex-row">
+        <div class="card-list flex-row" onclick="move()">
             <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-4">
             <section class="col-8 flex-column justify-center">
                 <section class="location">
@@ -149,5 +153,18 @@
         
         <section id="trademark">Copyright © 2022 Healour</section>
     </footer>
+    <script>
+        let card = document.getElementsByClassName("card-list");
+        console.log(card);
+
+        const move = () => {
+            window.location = "./detail.html";
+        };
+
+        for (let i = 0; i < card.length; i++) {
+            card[i].addEventListener("click",move);
+        }
+
+    </script>
 </body>
 </html>

@@ -86,5 +86,11 @@ h5{
     font-weight: normal;
 }
 
+h6{
+    font-size: 18px;
+    font-family: 'Vidaloka', sans-serif !important;
+    font-weight: normal;
+}
+
 .w-100{ width: 100%; }
 .h-100{ height: 100%; }

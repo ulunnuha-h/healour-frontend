@@ -7,35 +7,235 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/utility.css">
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Healour</title>
 </head>
-<body>
-    <nav class="flex-row justify-center align-center">
-        <img src="./assets/logo.png" alt="logo">
+<body id="landing-page">
+    <nav class="flex-row justify-between align-center scroll">
+        <img src="../../assets/logo.png" alt="logo">
         <section class="flex-row">
-            <input type="text" >
-            <div>
-                
+            <input type="text" placeholder="Search a tour">
+            <div class="search-icon">
+                <a href="./home/tour/index.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </section>
         <ul class="flex-row">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./home/news/index.html">News</a></li>
+            <li class="logout"><a href="./home/register.html" >Register</a></li>
+            <li class="login"><a href="./home/profile/invoice.html" >Invoices</a></li>
         </ul>
-        <a href="#">
+        <div class="login">
+            <label for="profile-p">
+                <img src="./assets/profile-picture.jpg" alt="profile">
+            </label>
+            <input type="checkbox" id="profile-p">
+            <ul>
+                <li><a href="./home/profile/invoice.html">Profile</a></li>
+                <li><a style="cursor: pointer;">Logout</a></li>
+            </ul>
+        </div>
+        <a href="./home/login.html" class="logout">
             <button class="btn-primary">Login</button>
         </a>
     </nav>
     <!-- Main Begin-->
+    <div class="bg-hero">
+        <div></div>
+        <img src="./assets/landing-bg.jpg" alt="">
+    </div>
     <main class="container">
-        pengen aja
+        <div class="hero flex-row align-center">
+            <section class="col-6 hero-info">
+                <h3>#KembaliBerwisata</h3>
+                <h1><span>HEAL</span> YOUR SOUL<br>WITH AMAZING <span>TOUR</span></h1>
+                <p style="margin-bottom: 32px;">Rencanakan trip anda, baca ulasan, serta dapatkan saran wisata dan mulai #KembaliBerwisata dengan kami. Cari diskon tur, pesan tur atau objek wisata yang sempurna.</p>
+                <section class="flex-column">
+                    <span style="margin-bottom: 12px;">Search for a trip</span>
+                    <form class="search-section flex-row">
+                        <section class="col-4">
+                            <label for="search-tour">Search Tour</label>
+                            <input type="text" id="search-tour" placeholder="Search a tour">
+                        </section>
+                        <section class="col-3">
+                            <label>Destination</label>
+                            <div class="flex-row">
+                                <div class="drop-down">
+                                    <b>
+                                        <label for="destination" class="flex-row justify-between align-center">
+                                            <span class="flex-row align-center">
+                                                <i class="fa-solid fa-location-dot" style="margin-right: 4px;"></i>
+                                                <span>Destination</span>
+                                            </span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </label>
+                                    </b>
+                                    <input type="checkbox" id="destination">
+                                    <ul>
+                                        <li>Bali</li>
+                                        <li>Jawa Timur</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="col-3">
+                            <label>Activity</label>
+                            <div class="flex-row">                                
+                                <div class="drop-down">
+                                    <b>
+                                        <label for="Activity" class="flex-row justify-between align-center">
+                                            <span class="flex-row align-center">
+                                                <i class="fa-solid fa-person-hiking" style="margin-right: 4px;"></i>
+                                                <span>Activity</span>
+                                            </span>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </label>
+                                    </b>
+                                    <input type="checkbox" id="Activity">
+                                    <ul>
+                                        <li>Gunung</li>
+                                        <li>Pantai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <a type="submit" href="./home/tour/index.html" class="col-2 flex-row align-center justify-center">Explore Now</a>
+                    </form>
+                </section>
+            </section>
+            <img class="col-5" src="./assets/landing1.png" alt="landing">
+        </div>
+        <div class="popular">
+            <h1>FIND POPULAR DESTINATION</h1>
+            <section class="flex-row justify-between">
+                <div class="card-popular col-4">
+                    <section>
+                        <span class="card-tag"><i class="fa-solid fa-star"></i> 4.5/5</span>
+                        <img src="./assets/bromo 1.jpg" alt="bromo">
+                    </section>
+                    <section>
+                        <h5>Sunrise at Gunung Bromo 1 Day Tour</h5>
+                        <p>By Sobatperjalanan</p>
+                        <section class="flex-row justify-between">
+                            <h4>Rp 400.000</h4>
+                            <a href="./home/tour/detail.html" class="btn-primary">Book</a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card-popular col-4" style="animation-delay: 150ms;">
+                    <section>
+                        <span class="card-tag"><i class="fa-solid fa-star"></i> 4.5/5</span>
+                        <img src="./assets/news1.jpg" alt="bromo">
+                    </section>
+                    <section>
+                        <h5>Open Trip Pulau Menjangan dan Tabuhan</h5>
+                        <p>By Smiletrp</p>
+                        <section class="flex-row justify-between">
+                            <h4>Rp 350.000</h4>
+                            <a href="./home/tour/detail.html" class="btn-primary">Book</a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card-popular col-4" style="animation-delay: 300ms;">
+                    <section>
+                        <span class="card-tag"><i class="fa-solid fa-star"></i> 4.5/5</span>
+                        <img src="./assets/airterjun.jpg" alt="bromo">
+                    </section>
+                    <section>
+                        <h5>Air Terjun Tumpaksewu Lumajang</h5>
+                        <p>By MyAdventure</p>
+                        <section class="flex-row justify-between">
+                            <h4>Rp 450.000</h4>
+                            <a href="./home/tour/detail.html" class="btn-primary">Book</a>
+                        </section>
+                    </section>
+                </div>
+            </section>
+            <section style="width: 100%;margin: 32px 0px;" class="flex-row justify-center">
+                <a href="./home/tour/index.html" class="btn-primary">Lihat semua paket trip</a>
+            </section>
+        </div>
     </main>
+    <div id="about">
+        <img class="shape" src="./assets/shape1.svg" alt="shape1">
+        <section class="flex-row container">
+            <img src="./assets/landing2.png" alt="landing2" class="col-5">
+            <div class="col-7">
+                <h1>WHY CHOOSE US</h1>
+                <p>Kami berpengalaman dalam membawa traveler untuk memulai perjalanannya ke berbagai destinasi, jadi jangan ragu untuk memulai petualangan anda sekarang juga.</p>
+                <section class="flex-row">
+                    <div class="card-why col-4 flex-column align-center">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>1.000</span>
+                        <hr>
+                        <span>Traveler</span>
+                    </div>
+                    <div class="card-why col-4 flex-column align-center">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>500</span>
+                        <hr>
+                        <span>Paket Trip</span>
+                    </div>
+                    <div class="card-why col-4 flex-column align-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>75</span>
+                        <hr>
+                        <span>Kota dan Provinsi</span>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <img class="shape" src="./assets/shape2.svg" alt="shape2" style="margin-bottom: -12px;">
+    </div>
+    <div class="review">
+        <div class="container flex-column align-center">
+            <h1>TOUR REVIEWS</h1>
+            <img src="./assets/quote-icon.svg" alt="quote">
+            <section class="flex-row">
+                <div class="card-review flex-column align-center col-3">
+                    <img class="profile" src="./assets/profile-picture.jpg" alt="messi">
+                    <h4>Lionel Messi</h4>
+                    <span>Bromo Trip</span>
+                    <span>By Sobatperjalanan</span>
+                    <img class="rating-star" src="./assets/rating-star.svg" alt="star">
+                    <p>“One of the best trip arranger for Malang travel destination. Good service, competitive price, experienced tour leader and anything you need for an unforgettable trip, please contact them straight away.”</p>
+                </div>
+                <div class="card-review flex-column align-center col-3">
+                    <img class="profile" src="./assets/profile-picture.jpg" alt="messi">
+                    <h4>Lionel Messi</h4>
+                    <span>Bromo Trip</span>
+                    <span>By Sobatperjalanan</span>
+                    <img class="rating-star" src="./assets/rating-star.svg" alt="star">
+                    <p>“One of the best trip arranger for Malang travel destination. Good service, competitive price, experienced tour leader and anything you need for an unforgettable trip, please contact them straight away.”</p>
+                </div>
+                <div class="card-review flex-column align-center col-3">
+                    <img class="profile" src="./assets/profile-picture.jpg" alt="messi">
+                    <h4>Lionel Messi</h4>
+                    <span>Bromo Trip</span>
+                    <span>By Sobatperjalanan</span>
+                    <img class="rating-star" src="./assets/rating-star.svg" alt="star">
+                    <p>“One of the best trip arranger for Malang travel destination. Good service, competitive price, experienced tour leader and anything you need for an unforgettable trip, please contact them straight away.”</p>
+                </div>
+                <div class="card-review flex-column align-center col-3">
+                    <img class="profile" src="./assets/profile-picture.jpg" alt="messi">
+                    <h4>Lionel Messi</h4>
+                    <span>Bromo Trip</span>
+                    <span>By Sobatperjalanan</span>
+                    <img class="rating-star" src="./assets/rating-star.svg" alt="star">
+                    <p>“One of the best trip arranger for Malang travel destination. Good service, competitive price, experienced tour leader and anything you need for an unforgettable trip, please contact them straight away.”</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
     <!-- Main End -->
     <footer>
         <div class="flex-row justify-center">
             <div class="col-3">
-                <img src="./assets/logow.png" alt="white logo" style="width: 55%;">
+                <img src="../../assets/logow.png" alt="white logo" style="width: 55%;">
             </div>
             <div class="col-3">
                 <h3>Halaman</h3>
@@ -67,5 +267,7 @@
         
         <section id="trademark">Copyright © 2022 Healour</section>
     </footer>
+    <script src="./landing.js"></script>
+    <script src="./nav.js"></script>
 </body>
 </html>

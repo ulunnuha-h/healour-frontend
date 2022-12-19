@@ -12,20 +12,35 @@
     <title>Healour</title>
 </head>
 <body>
-    <nav class="flex-row justify-center align-center">
-        <img src="../../assets/logo.png" alt="logo">
+    <nav class="flex-row justify-between align-center">
+        <a href="../../index.html">
+            <img src="../../assets/logo.png" alt="logo">
+        </a>
         <section class="flex-row">
-            <input type="text" >
-            <div>
-                
+            <input type="text" placeholder="Search a tour">
+            <div class="search-icon">
+                <a href="../tour/index.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </section>
         <ul class="flex-row">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../news/index.html">News</a></li>
+            <li class="logout"><a href="./home/register.html" >Register</a></li>
+            <li class="login"><a href="./invoice.html" >Invoices</a></li>
         </ul>
-        <a href="#">
+        <div class="login">
+            <label for="profile-p">
+                <img src="../../assets/profile-picture.jpg" alt="profile">
+            </label>
+            <input type="checkbox" id="profile-p">
+            <ul>
+                <li><a href="./invoice.html">Profile</a></li>
+                <li><a style="cursor: pointer;">Logout</a></li>
+            </ul>
+        </div>
+        <a href="../login.html" class="logout">
             <button class="btn-primary">Login</button>
         </a>
     </nav>
@@ -60,7 +75,7 @@
                             <strong><span>Invoices</span></strong>
                         </a>
                         <a href="./edit.html">
-                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
                             <Span>Edit profile</Span>
                         </a>
                     </section>
@@ -137,5 +152,6 @@
         
         <section id="trademark">Copyright © 2022 Healour</section>
     </footer>
+    <script src="../../nav.js"></script>
 </body>
 </html>

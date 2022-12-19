@@ -10,6 +10,7 @@
     --color-hover:#9EC06D;
     --color-2:#476930;
     transition-duration: 300ms;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -29,10 +30,21 @@ nav{
     z-index: 1;
 }
 
+nav.scroll > section{
+    width: 0%;
+    position: absolute;
+    left: 14%;
+    height: 38px;
+    opacity: 0;
+}
+
 nav section{
     width: 100%;
-    height: 100%;
+    height: 38px;
     margin: 0px 24px;
+    transition-property: width opacity;
+    transition-duration: 300ms;
+    opacity: 1;
 }
 
 nav section input{
@@ -82,11 +94,52 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav .search-icon{
+nav .search-icon > a{
+    color: var(--color-white);
+    text-decoration: none;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-white);
+    height: 100%;
+}
+
+nav .login{
+    display: none;
+
+}
+
+nav .login img{
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .login > input{
+    display: none;
+}
+
+nav .login > input:checked ~ ul{
+    display: block;
+}
+
+nav .login ul{
+    background-color: var(--color-bg);
+    padding: 12px 8px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    display: none;
+}
+
+nav .login li{
+    padding: 8px 16px;
+    text-align: center;
+    margin: 0px;
+}
+
+nav .logout{
+    display: block;
 }
 
 /* Footer */

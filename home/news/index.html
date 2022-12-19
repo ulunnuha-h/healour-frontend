@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="../../style/index.css">
     <link rel="stylesheet" href="../../style/utility.css">
     <link rel="stylesheet" href="../../style/styles.css">
+    <link rel="stylesheet" href="./news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Healour</title>
 </head>
 <body>
-    <nav class="flex-row justify-center align-center">
-        <img src="../../assets/logo.png" alt="logo">
+    <nav class="flex-row justify-between align-center">
+        <a href="../../index.html">
+            <img src="../../assets/logo.png" alt="logo">
+        </a>
         <section class="flex-row">
-            <input type="text" >
+            <input type="text" placeholder="Search a tour">
             <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../tour/index.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </section>
         <ul class="flex-row">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../home/news/index.html">News</a></li>
+            <li><a href="../register.html">Register</a></li>
         </ul>
         <a href="../login.html">
             <button class="btn-primary">Login</button>
@@ -30,7 +35,94 @@
     </nav>
     <!-- Main Begin-->
     <main class="container">
-        
+        <section class="news-title flex-row justify-center align-center">
+            <hr class="news-line">
+            <h1>Popular News</h1>
+        </section>
+        <section class="news-popular flex-row justify-center align-center">
+            <img src="../../assets/news1.jpg" alt="news1" class="animate">
+            <div>
+                <span>Cristiano Ronaldo - January 11, 2022</span>
+                <h2>Pantai Tercantik di Yogyakarta</h2>
+                <p>Tak perlu dipungkiri, keindahan Yogyakarta memang dapat menyihir siapa saja untuk datang menikmati setiap jengkalnya. Ada banyak hal yang bisa ditemukan jika Anda datang berkunjung ke Yogyakarta. Tak hanya tentang Malioboro dan Keraton Yogyakarta saja, lebih dari itu Yogyakarta juga menyimpan keindahan alam yang sangat memukau. Khususnya Anda penggemar wisata pantai dapat datang berkunjung menikmati eksotisme alam yang ada di bumi ... <a href="./detail.html"><b>Read More</b></a></p>
+                <section class="flex-row justify-between align-end">
+                    <ul class="flex-row">
+                        <li class="bullet active"></li>
+                        <li class="bullet"></li>
+                        <li class="bullet"></li>
+                        <li class="bullet"></li>
+                    </ul>
+                    <section class="arrows">
+                        <img class="arrow-button" src="./icons/left.svg" alt="left">
+                        <img class="arrow-button" src="./icons/right-active.svg" alt="right-active">
+                    </section>
+                </section>
+            </div>
+        </section>
+        <hr class="news-line">
+        <a href="./detail.html" class="card-news flex-row">
+            <div class="col-3">
+                <img src="../../assets/news2.jpg" alt="">
+            </div>
+            <section class="col-9 flex-column justify-center">
+                <span>Lionel Messi - Oktober 16, 2022</span>
+                <h4>Kalender Libur Nasional dan Cuti Bersama 2023</h4>
+                <p>Udah siap liburan lagi di tahun 2023? Ada 16 tanggal merah Hari Libur Nasional ditambah 8 tanggal merah Cuti Bersama. Yuk ...</p>
+            </section>
+        </a>
+        <hr class="news-line">
+        <a href="./detail.html" class="card-news flex-row">
+            <div class="col-3">
+                <img src="../../assets/news2.jpg" alt="">
+            </div>
+            <section class="col-9 flex-column justify-center">
+                <span>Lionel Messi - Oktober 16, 2022</span>
+                <h4>Kalender Libur Nasional dan Cuti Bersama 2023</h4>
+                <p>Udah siap liburan lagi di tahun 2023? Ada 16 tanggal merah Hari Libur Nasional ditambah 8 tanggal merah Cuti Bersama. Yuk ...</p>
+            </section>
+        </a>
+        <hr class="news-line">
+        <a href="./detail.html" class="card-news flex-row">
+            <div class="col-3">
+                <img src="../../assets/news2.jpg" alt="">
+            </div>
+            <section class="col-9 flex-column justify-center">
+                <span>Lionel Messi - Oktober 16, 2022</span>
+                <h4>Kalender Libur Nasional dan Cuti Bersama 2023</h4>
+                <p>Udah siap liburan lagi di tahun 2023? Ada 16 tanggal merah Hari Libur Nasional ditambah 8 tanggal merah Cuti Bersama. Yuk ...</p>
+            </section>
+        </a>
+        <hr class="news-line">
+        <a href="./detail.html" class="card-news flex-row">
+            <div class="col-3">
+                <img src="../../assets/news2.jpg" alt="">
+            </div>
+            <section class="col-9 flex-column justify-center">
+                <span>Lionel Messi - Oktober 16, 2022</span>
+                <h4>Kalender Libur Nasional dan Cuti Bersama 2023</h4>
+                <p>Udah siap liburan lagi di tahun 2023? Ada 16 tanggal merah Hari Libur Nasional ditambah 8 tanggal merah Cuti Bersama. Yuk ...</p>
+            </section>
+        </a>
+        <hr class="news-line">
+        <a href="./detail.html" class="card-news flex-row">
+            <div class="col-3">
+                <img src="../../assets/news2.jpg" alt="">
+            </div>
+            <section class="col-9 flex-column justify-center">
+                <span>Lionel Messi - Oktober 16, 2022</span>
+                <h4>Kalender Libur Nasional dan Cuti Bersama 2023</h4>
+                <p>Udah siap liburan lagi di tahun 2023? Ada 16 tanggal merah Hari Libur Nasional ditambah 8 tanggal merah Cuti Bersama. Yuk ...</p>
+            </section>
+        </a>
+        <hr class="news-line">
+        <ul class="paginate" style="margin-bottom: 24px;">
+            <li class="arrow"> < </li>
+            <li class="item active"> 1 </li>
+            <li class="item"> 2 </li>
+            <li class="item"> .. </li>
+            <li class="item"> 4 </li>
+            <li class="arrow active"> > </li>
+        </ul>
     </main>
     <!-- Main End -->
     <footer>
@@ -68,5 +160,6 @@
         
         <section id="trademark">Copyright © 2022 Healour</section>
     </footer>
+    <script src="./news.js"></script>
 </body>
 </html>

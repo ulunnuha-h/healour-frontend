@@ -12,18 +12,22 @@
     <title>Healour</title>
 </head>
 <body>
-    <nav class="flex-row justify-center align-center">
-        <img src="../../assets/logo.png" alt="logo">
+    <nav class="flex-row justify-between align-center">
+        <a href="../../index.html">
+            <img src="../../assets/logo.png" alt="logo">
+        </a>
         <section class="flex-row">
-            <input type="text" >
+            <input type="text" placeholder="Search a tour">
             <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="../tour/index.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </section>
         <ul class="flex-row">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../home/news/index.html">News</a></li>
+            <li><a href="../register.html">Register</a></li>
         </ul>
         <a href="../login.html">
             <button class="btn-primary">Login</button>
@@ -96,7 +100,7 @@
                         </ul>
                     </div>
                 </section>
-                <div class="card-list flex-row">
+                <div class="card-list flex-row" onclick="move()">
                     <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
                     <section class="col-7 flex-column justify-center">
                         <section class="location">
@@ -104,7 +108,7 @@
                             <span>Lowokwaru, Malang</span>
                         </section>
                         <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
-                        <a href="#">By Sobatperjalanan</a>
+                        <a href="./profile.html">By Sobatperjalanan</a>
                         <section class="rating">
                             <i class="fa-solid fa-star"></i>
                             <span>4.5 | (200 Review)</span>
@@ -112,7 +116,7 @@
                         <h4 class="price">Rp 400.000</h4>
                     </section>
                 </div>
-                <div class="card-list flex-row">
+                <div class="card-list flex-row" onclick="move()">
                     <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
                     <section class="col-7 flex-column justify-center">
                         <section class="location">
@@ -120,22 +124,7 @@
                             <span>Lowokwaru, Malang</span>
                         </section>
                         <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
-                        <a href="#">By Sobatperjalanan</a>
-                        <section class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <span>4.5 | (200 Review)</span>
-                        </section>
-                        <h4 class="price">Rp 400.000</h4>
-                    </section>
-                </div><div class="card-list flex-row">
-                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
-                    <section class="col-7 flex-column justify-center">
-                        <section class="location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Lowokwaru, Malang</span>
-                        </section>
-                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
-                        <a href="#">By Sobatperjalanan</a>
+                        <a href="./profile.html">By Sobatperjalanan</a>
                         <section class="rating">
                             <i class="fa-solid fa-star"></i>
                             <span>4.5 | (200 Review)</span>
@@ -143,6 +132,40 @@
                         <h4 class="price">Rp 400.000</h4>
                     </section>
                 </div>
+                <div class="card-list flex-row" onclick="move()">
+                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
+                    <section class="col-7 flex-column justify-center">
+                        <section class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lowokwaru, Malang</span>
+                        </section>
+                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
+                        <a href="./profile.html">By Sobatperjalanan</a>
+                        <section class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5 | (200 Review)</span>
+                        </section>
+                        <h4 class="price">Rp 400.000</h4>
+                    </section>
+                </div>
+                <div class="card-list flex-row" onclick="move()">
+                    <img src="../../assets/bromo 1.jpg" alt="bromo" class="col-5">
+                    <section class="col-7 flex-column justify-center">
+                        <section class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lowokwaru, Malang</span>
+                        </section>
+                        <h4>Sunrise at Gunung Bromo 1 Day Tour</h4>
+                        <a href="./profile.html">By Sobatperjalanan</a>
+                        <section class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5 | (200 Review)</span>
+                        </section>
+                        <h4 class="price">Rp 400.000</h4>
+                    </section>
+                </div>
+                
+
                 <ul class="paginate">
                     <li class="arrow"> < </li>
                     <li class="item active"> 1 </li>
@@ -190,5 +213,10 @@
         
         <section id="trademark">Copyright © 2022 Healour</section>
     </footer>
+    <script>
+        const move = () => {
+            window.location = "./detail.html";
+        };
+    </script>
 </body>
 </html>

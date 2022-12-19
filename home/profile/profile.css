@@ -70,8 +70,8 @@
     text-decoration: none;
 }
 
-#profile menu a span,i{
-    font-size: 28px;
+#profile-menu > a i{
+    font-size: 24px;
     margin-right: 6px;
 }
 
